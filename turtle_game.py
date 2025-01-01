@@ -1,17 +1,19 @@
 from turtle import Turtle, Screen
 import random
 
-screen = Screen()
+screen = Screen() #Drawing window
 screen.setup(width=800, height=600)
-screen.bgpic('road.gif')
+screen.bgpic('road.gif') #Set background to a road
 
+#Lists
 y_positions = [-260, -172, -85, 2, 85, 172, 260]
 colors = ['white', 'red', 'orange', 'yellow', 'blue', 'green', 'purple']
 all_tur = []
 
+#Retrieves User Input
 user_bet = screen.textinput("Enter your bet", "Which turtle color will win? (white, red, orange, yellow, blue, green, purple)")
 
-for index in range(0, 7):
+for index in range(0, 7): #Draws seven turtles
     new_tur = Turtle(shape="turtle") #turtle shape
     new_tur.shapesize(2) #Increase size
     new_tur.speed('fastest') #Set animation speed to fastest
@@ -33,6 +35,6 @@ while is_on:
                 turtle.write("You lose! " + winner + " turtle is the winner.", font=("Courier", 16, "normal"),
                              align="right")
         random_speed = random.randint(0, 7)
-        turtle.forward(random_speed)
+        turtle.forward(random_speed) #Move turtle forward by random distance
 
-screen.exitonclick()
+screen.exitonclick() #Exits turtle on a click
