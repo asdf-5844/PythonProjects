@@ -62,6 +62,7 @@ def print_board(board):
         print(row)
 
 # Set up board
+# This part creates a list with 3 space characters, like [" ", " ", " "].
 board = [[" " for _ in range(3)] for _ in range(3)]
 
 # x goes first
