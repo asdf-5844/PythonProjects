@@ -1,8 +1,8 @@
 initial_word=input("Enter a word: ")
 def get_index(initial_word):
     index=int(input("Enter an index (-1 to quit): "))
-    while index>len(initial_word) or index<-1:
-        print("Invalid index")
+    while index>len(initial_word)-1 or index<-1:
+        print("Invalid index! Please enter a number between 0 and", len(word) - 1)
         index=int(input("Enter an index (-1 to quit): "))
     return index
 def get_letter():
