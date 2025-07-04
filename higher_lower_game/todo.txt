@@ -1,0 +1,11 @@
+1. Print game logo
+2. Use a function to format the data
+3. While loop
+    3a. first person
+    3b. "VS" logo
+    3c. second person
+    3d. question
+    3f. Use condition to check if correct or wrong-
+    (write another function in the beginning)
+
+7/4: Fix bug where it compares two of the same people
